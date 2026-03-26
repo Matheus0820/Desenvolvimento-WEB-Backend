@@ -1,0 +1,17 @@
+{
+  "name": "modern_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js",
+    "hello": "echo 'Hello, Professor!!!!!!'",
+    "feijaocomfarinha": "echo 'Frase em inglês: Feijão com Farinha!'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
