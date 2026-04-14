@@ -2,7 +2,7 @@ import express from 'express';
 const app = express();
 // --- INICIALIZAÇÃO DO SERVIDOR ---
 const PORTA = 3000;
-app.use(express.json());
+app.use(express.json()); // Middleware que execulta no começo
 
 // Base de dados -> Simulação de dados de um banco de dados
 let pets = [
@@ -44,6 +44,7 @@ app.put('/pets/:id', (req, res) => {
     pets[index] = {id: Number(id), ...req.body};
     res.json(pets[index]);
 });
+
 
 
 app.listen(PORTA, () => {
