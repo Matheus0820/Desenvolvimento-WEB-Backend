@@ -11,7 +11,7 @@ export const buscarPessoaId = (req, res) => {
     const { id } = req.params;
 
     // Buscando pessoa em uma lista de objeto de pessoas com o metódo 'find'
-    pessoa = pessoas.find(pessoa => pessoa.id === Number(id))
+    const pessoa = pessoas.find(pessoa => pessoa.id === Number(id))
 
     if(!pessoa) {
         return res.status(404).json({mensagem: "Pessoa com id informado não existe"})
@@ -22,8 +22,8 @@ export const buscarPessoaId = (req, res) => {
 
 // Função Cria pessoa
 export const criarPessoa = (req, res) => {
-    id = int(Date.now)
-    novaPessoa = {id: id, ...req.body}
+    const id = Number(Date.now());
+    const novaPessoa = {id: id, ...req.body}
 
     pessoas.push(novaPessoa)
     res.status(201).json(novaPessoa)
