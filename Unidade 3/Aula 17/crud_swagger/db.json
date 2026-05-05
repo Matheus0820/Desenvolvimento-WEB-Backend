@@ -1,0 +1,28 @@
+{
+  "pessoas": [
+    {
+      "id": 1776948945856,
+      "nome": "João Silva",
+      "etnia": "Pardo(a)",
+      "idade": 30
+    },
+    {
+      "id": 1776948979314,
+      "nome": "Maria",
+      "etnia": "Negro(a)",
+      "idade": 21
+    },
+    {
+      "id": 1776949018441,
+      "nome": "Judite",
+      "etnia": "Branco(a)",
+      "idade": 25
+    },
+    {
+      "id": 1776949403658,
+      "nome": "Matheus Ramos",
+      "etnia": "Pardo(a)",
+      "idade": 20
+    }
+  ]
+}
